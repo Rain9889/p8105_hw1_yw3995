@@ -9,3 +9,16 @@ output: github_document
 library(moderndive)
 library(tidyverse)
 ```
+
+# Problem 1
+
+## Load the dataset
+
+```{r}
+data("early_january_weather")
+```
+
+* Description
+  * In this dataset, variables including **`r names(early_january_weather)`**.
+  * the size of the dataset is **`r nrow (early_january_weather)`** rows * **`r ncol(early_january_weather)`** cols.
+  * the mean temperature is **`r mean (early_january_weather $ temp)`**.
