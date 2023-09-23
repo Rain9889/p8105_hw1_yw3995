@@ -22,3 +22,14 @@ data("early_january_weather")
   * In this dataset, variables including **`r names(early_january_weather)`**.
   * the size of the dataset is **`r nrow (early_january_weather)`** rows * **`r ncol(early_january_weather)`** cols.
   * the mean temperature is **`r mean (early_january_weather $ temp)`**.
+
+## Scatterplot of time_hour and temp
+
+```{r}
+hour_temp_plot = ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geom_point()
+hour_temp_plot
+```
+
+* Description
+  * From 1:00 on January 1, 2013 to 22:00 on January 15, 2013, the **temperature** continued to fluctuate up and down with **time**, in general showed an upward trend. The maximum temperature reached around 57 degrees at 11 o'clock on January 14, and then dropped rapidly. 
+  * The **humidity** fluctuates between 36.82 and 100, with the highest average humidity at around 100 from January 11 to 14.
