@@ -52,3 +52,13 @@ sample_df = tibble(
   vec_factor = factor(c("Level1", "Level2", "Level3", "Level2", "Level1", "Level2", "Level3", "Level1", "Level3", "Level1"))
 )
 ```
+
+## Mean of the data frame
+
+* Mean of each variable
+  * The mean of a random sample is **`r mean(pull(sample_df, norm_samp))`**.
+  * The mean of a logical vector is **`r mean(pull(sample_df, vec_logical))`**.
+  * The mean of a character vector is **`r mean(pull(sample_df, vec_character))`**.
+  * The mean of a factor vector is **`r mean(pull(sample_df, vec_factor))`**.
+* Result
+  * Random sample and logical vector have the mean value, but character and factor vector do not.
