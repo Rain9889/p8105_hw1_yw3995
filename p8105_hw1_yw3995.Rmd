@@ -33,3 +33,9 @@ hour_temp_plot
 * Description
   * From 1:00 on January 1, 2013 to 22:00 on January 15, 2013, the **temperature** continued to fluctuate up and down with **time**, in general showed an upward trend. The maximum temperature reached around 57 degrees at 11 o'clock on January 14, and then dropped rapidly. 
   * The **humidity** fluctuates between 36.82 and 100, with the highest average humidity at around 100 from January 11 to 14.
+
+## Export scatterplot
+
+```{r }
+ggsave("scatter_plot.pdf")
+```
