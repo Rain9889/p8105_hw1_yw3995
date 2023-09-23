@@ -62,3 +62,15 @@ sample_df = tibble(
   * The mean of a factor vector is **`r mean(pull(sample_df, vec_factor))`**.
 * Result
   * Random sample and logical vector have the mean value, but character and factor vector do not.
+  
+## Convert variables
+
+```{r, eval = FALSE}
+as.numeric pull(sample_df, vec_logical)
+as.numeric pull(sample_df, vec_character)
+as.numeric pull(sample_df, vec_factor)
+```
+
+* Results
+  * I can see the Warning messages about "vec_character" and "vec_factor", which are both **"argument is not numeric or logical: returning NA"**.
+  * This help explain what happens when I try to take the mean, because "vec_character" and "vec_factor" are not numeric or logical, R cannot recognize and calculate.
